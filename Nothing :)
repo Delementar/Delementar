@@ -611,6 +611,6 @@ getgenv().TeamCheck = true -- Check if Target is on your Team (True means it won
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/Universal-Scripts/main/Aimbot", true))()
 end)
 
-Section:NewSlider("Jump", "JumpPower", 250,120, function() game.Players.LocalPlayer.Character.Humanoid.JumpPower = jp
+Section:NewSlider("Jump", "JumpPower", 250,120, function() game.Players.LocalPlayer.Character.Humanoid.JumpPower = JP
 
 end)
