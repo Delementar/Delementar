@@ -458,7 +458,7 @@ Section:NewButton("keyboard", "Grant you a keyboard pc", function() loadstring(g
 
 end)
 
-local Tab = Window:NewTab("Credits") local Section = Tab:NewSection("Credits") Section:NewLabel("Script: DElementar")
+local Tab = Window:NewTab("Credits") local Section = Tab:NewSection("Credits") Section:NewLabel("Script: DElementar") Sectioon:NewLabe("Not all Mine")
 
 local Tab = Window:NewTab("Coming") local Section = Tab:NewSection("Coming Script") Section:NewLabel("Full Release,Aimbot,KillAura,GodMode,Walkspeed") Section:NewLabel("UniversalHack And JumpPower!") Section:NewLabel("Antiban,Shaders And NoClip")
 
