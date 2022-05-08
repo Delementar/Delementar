@@ -464,7 +464,7 @@ local Tab = Window:NewTab("Coming") local Section = Tab:NewSection("Coming Scrip
 
 local Tab = Window:NewTab("OwnerPanel") local Section = Tab:NewSection("Script") 
 
-Section:NewSlider("Speed", "Speeding", 250, 120, function(v) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v 
+Section:NewSlider("Speed", "Speeding", 250, 120, function(s) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 
 end)
 
