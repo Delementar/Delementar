@@ -462,7 +462,7 @@ local Tab = Window:NewTab("Credits") local Section = Tab:NewSection("Credits") S
 
 local Tab = Window:NewTab("Coming") local Section = Tab:NewSection("Coming Script") Section:NewLabel("Full Release,Aimbot,KillAura,GodMode,Walkspeed") Section:NewLabel("UniversalHack And JumpPower!") Section:NewLabel("Antiban,Shaders And NoClip")
 
-local Tab = Window:NewTab("OwnerPannel") local Section = Tab:NewSection("Script") 
+local Tab = Window:NewTab("OwnerPanel") local Section = Tab:NewSection("Script") 
 
 Section:NewSlider("Speed", "Speeding", 250, 120, function(v) game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v 
 
@@ -611,10 +611,10 @@ getgenv().TeamCheck = true -- Check if Target is on your Team (True means it won
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/Universal-Scripts/main/Aimbot", true))()
 end)
 
-Section:NewButton("Server Hoppers", "Find/Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
+OwnerPanelSection:NewButton("Server Hoppers", "Find/Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
 
-Section:NewSlider("Jump Power", "Changes your jump power.", 500, 50, function(jp)
+OwnerPanelSection:NewSlider("Jump Power", "Changes your jump power.", 500, 50, function(jp)
 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = jp
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = jp
 
 end)
