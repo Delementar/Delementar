@@ -613,7 +613,7 @@ end)
 
 OwnerPanelSection:NewButton("Server Hoppers", "Find/Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
 
-OwnerPanelSection:NewSlider("Jump Power", "Changes your jump power.", 500, 50, function(s)
+OwnerPanelSection:NewSlider("Jump Power", "Changes your jump power", 500, 50, function(s)
 
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
     
