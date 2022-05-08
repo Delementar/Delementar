@@ -611,7 +611,7 @@ getgenv().TeamCheck = true -- Check if Target is on your Team (True means it won
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zxciaz/Universal-Scripts/main/Aimbot", true))()
 end)
 
-Section:NewButton("Server Hoppers", "Find/Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+Section:NewButton("Server Hoppers", "Find/Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))(); end)
 
 Section:NewSlider("Jump Power", "Changes your jump power.", 500, 50, function(jp)
 
