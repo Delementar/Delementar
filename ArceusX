@@ -613,3 +613,6 @@ Section:NewToggle("Jump Power", "Toggles using jump power.", function(state)
     end
 
 end)
+
+Section:NewButton("Server Hoppers", "Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+end)
