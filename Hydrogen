@@ -616,3 +616,18 @@ end)
 
 Section:NewButton("Server Hoppers", "Hop Server", function() loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
 end)
+ 
+local Tab = Window:NewTab("V1.0●GameHub●")
+
+Section:NewButton("Pet Sim X", "OP", function()
+
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/Delementar/Delementar/main/PET%20SIM%20X%20HUB%20SCRIPT"))()
+
+end)
+
+
+Section:NewButton("BloxFruit", "Working", function()
+
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+
+end)
