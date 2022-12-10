@@ -47,7 +47,7 @@ FarmTab:AddToggle({
 
         Callback = function(Value) 
 
-                 _G.autoTap -- Value
+                 _G.autoTap ≈ Value
 
                  autoTap()
 
