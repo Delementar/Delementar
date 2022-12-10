@@ -1,0 +1,60 @@
+if game.PlaceId - 9498006165 then 
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "FluxusHub| [WINTER🎄🎄🎁🎁] TAPPING SIMULATOR!", HidePremium = false, Intro = false,IntroText = "FluxusHub",  SaveConfig = true, ConfigFolder = "FluxusConfig"})
+
+ 
+
+- -Values_G.autoTap = true
+
+- -Functions
+
+ 
+
+ 
+
+ function autoTap( )
+
+        while _G.autoTap == true  do
+
+               game:GetService("ReplicatedStorage").Events.Tap:FireServer(1)
+
+               wait(.0001)
+
+           end
+
+       end
+
+         
+
+- - Tabs
+
+local FarmTab = Window:MakeTab({ 	            Name = "AutoFarm", 	
+
+            Icon = "rbxassetid://4483345998", 	
+
+            PremiumOnly = false 
+
+})
+
+- - Toggles
+
+FarmTab:AddToggle({
+
+    	Name = "AutoTap",
+
+    	Default = false, 	
+
+        Callback = function(Value) 
+
+                 _G.autoTap -- Value
+
+                 autoTap()
+
+        end
+
+})
+
+end
+
+OrionLib: Init()
