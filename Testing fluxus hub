@@ -5,7 +5,8 @@ local Window = OrionLib:MakeWindow({Name = "FluxusHub| [WINTER🎄🎄🎁🎁] 
 
  
 
-- -Values_G.autoTap = true
+- -Values
+_G.autotap = true
 
 - -Functions
 
@@ -13,9 +14,9 @@ local Window = OrionLib:MakeWindow({Name = "FluxusHub| [WINTER🎄🎄🎁🎁] 
 
  
 
- function autoTap( )
+ function autotap( )
 
-        while _G.autoTap == true  do
+        while _G.autotap == true  do
 
                game:GetService("ReplicatedStorage").Events.Tap:FireServer(1)
 
@@ -41,15 +42,15 @@ local FarmTab = Window:MakeTab({ 	            Name = "AutoFarm",
 
 FarmTab:AddToggle({
 
-    	Name = "AutoTap",
+    	Name = "Autotap",
 
     	Default = false, 	
 
         Callback = function(Value) 
 
-                 _G.autoTap ≈ Value
+                 _G.autotap ≈ Value
 
-                 autoTap()
+                 autotap()
 
         end
 
