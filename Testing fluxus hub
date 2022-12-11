@@ -1,4 +1,4 @@
-if game.PlaceId - 9498006165 then 
+if game.PlaceId -- 9498006165 then 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "FluxusHub| [WINTER🎄🎄🎁🎁] TAPPING SIMULATOR!", HidePremium = false, Intro = false,IntroText = "FluxusHub",  SaveConfig = true, ConfigFolder = "FluxusConfig"})
